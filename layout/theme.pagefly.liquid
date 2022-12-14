@@ -143,7 +143,6 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   {% endcomment %}
   
   <script>
-    
       if (window.addEventListener) {
         window.addEventListener('load', function(){
 
@@ -152,10 +151,8 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
                                  document.body.appendChild(oScript);
                                 }, 300);
         }, false);
-
       }
       else {
-
         window.attachEvent('onload', function() {
           setTimeout(function() {
             var oScript = document.createElement("script");
@@ -163,9 +160,7 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
             document.body.appendChild(oScript);
           }, 300);
         });
-
       }
-    
   </script>
   
   <!-- jQuery Dependent -->
@@ -177,10 +172,8 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   {{ 'instafeed.js'  | asset_url | script_tag }}
   {% endcomment %}
   
-  
     <script defer src="{{ 'handlebars.min.js' | asset_url }}"></script>
   <script>
-    
       if (window.addEventListener) {
         window.addEventListener('load', function(){
 
@@ -190,7 +183,6 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
                                  defer = true;
                                 }, 5000);
         }, false);
-
       }
       else {
 
@@ -228,12 +220,8 @@ If you plan to remove PageFly, please see the guide in our help center first: ht
   {% endif %}
   {% include 'sca.freegifts' %}
   {% include 'sca-quick-view-init' %}
-
   {% render 'pagefly-header' %}
-
   {% include 'giftship' %} 
-
- 
 {% include 'wiser' %}{% include 'wiser_popup' %}
   
 <!--   <script src="https://www.googletagmanager.com/gtag/js?id=AW-307722835"></script> -->
@@ -257,10 +245,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-PXSC2V5');</script>
 <!-- End Google Tag Manager -->
 
+
+  
 	{%- if dropinblog == 1 -%}{{ dropinblog_head_bottom }}{%- endif -%}
 {% if request.page_type == 'article' or request.page_type == 'blog' %}{% render 'philyra-popup' %}<script src="{{ 'philyra.js' | asset_url }}"></script>{% endif %}
  
+  
 <!--   <script src="https://schemaplus-cdn.s3.amazonaws.com/loader-ee0e897a303f0605bd009f9409811dda-hydropeptidestore.min.js"></script> -->
+  
   
   <!-- Narrativ Tag Begin -->
   
@@ -278,10 +270,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </script>
     <!-- Narrativ Tag End -->
 </head>
-
+ 
 {% capture body_class %}{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }} image-hover-light cta-fill-{{settings.cta_button_style}} {% if settings.show_custom_cursor %}custom-cursor{% endif %} {% if settings.transition_images_fade %}enable-fade-in{% endif %} {% if settings.transition_grid_items %}show-grid-items-transition{% endif %}{% endcapture %}
 
-<body id="{{ page_title | handle }}" class="{{ body_class }}" ><div class="pagefly-container">{{ content_for_layout }}</div></body>
+<body id="{{ page_title | handle }}" class="{{ body_class }}"><div class="pagefly-container">{{ content_for_layout }}</div></body>
 </html>
   <!-- Begin Shopify-Afterpay JavaScript Snippet (v1.0.12) -->
-  
