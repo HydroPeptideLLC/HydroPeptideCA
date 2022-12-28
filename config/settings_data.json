@@ -1131,15 +1131,15 @@
           "5926cf66-c74c-4fe6-89ec-953cb4c623dd": {
             "type": "gallery_image",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/HolidayKits_2022_HomepageBanner_Desktop2_NoText.png",
-              "background_image_mobile": "shopify:\/\/shop_images\/HolidayKits_2022_HomepageBanner_Mobile2_NoText.png",
+              "background_image": "shopify:\/\/shop_images\/102722_HolidayKits_HomepageBanner_Desktop_v3.png",
+              "background_image_mobile": "shopify:\/\/shop_images\/102722_HolidayKits_HomepageBanner_Mobile_NoText.png",
               "title": "THREE NEW FAVORITES",
               "short_text": "Introducing three new skincare sets made for any routine, every skin type, and all gift lists.",
               "text_color": "#393939",
               "cta": "SHOP NOW",
               "banner_cta_color": "#ffffff",
               "link": "shopify:\/\/collections\/gift-value-sets",
-              "desktop_banner_content_position": "float: left !important;",
+              "desktop_banner_content_position": "float: right !important;",
               "banner_content_position": "padding: 0px 0 550px !important;"
             }
           },
